@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <title>Age Calculator App</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap" rel="stylesheet">
+    <script src="./JS/myScript.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <div class="flex-container">
+                <div>
+                    <label id="lab" for="day">DAY</label>
+                    <br>
+                    <input type="number" name="day" id="day" placeholder="DD">
+                    <p id="demo1"></p>
+                </div>
+
+                <br>
+                <div>
+                    <label id="labe" for="month">MONTH</label>
+                    <br>
+                    <input type="number" name="month" id="month" placeholder="MM">
+                    <p id="demo2"></p>
+                </div>
+                <br>
+                <div>
+
+                    <label id="label" for="year">YEAR</label>
+                    <br>
+                    <input type="number" name="year" id="year" placeholder="YYYY">
+                    <p id="demo3"></p>
+                </div>
+                <br>
+            </div>
+
+            <div class="mid">
+                <hr>
+
+                <div>
+                    <button onclick="age()" type="button" class="icon"><img src="./images/icon-arrow.svg" alt></button>
+                </div>
+            </div>
+        </form>
+        <div class="date">
+            <div class="dates">
+                <h1> <span id="YY">- -</span> years</h1>
+            </div>
+            <div class="dates">
+                <h1><span id="MM">- -</span> months</h1>
+            </div>
+            <div class="dates">
+                <h1><span id="DD">- -</span> days</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
